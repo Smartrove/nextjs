@@ -1,19 +1,26 @@
 import Link from "next/link";
+import styles from "../styles/Header.module.css";
 
 const Header = () => {
   return (
-    <div>
-      <h1>Smartrove</h1>
-      <nav className="navbar">
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
+    <div className={styles.navbarcontainer}>
+      <h1 className={styles.navlogo}>Smartrove...</h1>
+      <nav className={styles.navcontainer}>
+        <ul className={styles.navlist}>
+          <li className={styles.navlink}>
+            <Link href="/" className={styles.link}>
+              Home
+            </Link>
           </li>
-          <li>
-            <Link href="/about">About</Link>
+          <li className={styles.navlink}>
+            <Link href="/about" className={styles.link}>
+              About
+            </Link>
           </li>
-          <li>
-            <Link href="/services">Services</Link>
+          <li className={styles.navlink}>
+            <Link href="/services" className={styles.link}>
+              Services
+            </Link>
           </li>
         </ul>
       </nav>
