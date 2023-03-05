@@ -1,10 +1,13 @@
 import Link from "next/link";
 import styles from "../styles/Header.module.css";
+import Image from "next/image";
 
 const Header = () => {
   return (
     <div className={styles.navbarcontainer}>
-      <h1 className={styles.navlogo}>Smartrove...</h1>
+      <Link href="/">
+        <Image src="/smartrove.jpg" width={100} height={100} />
+      </Link>
       <nav className={styles.navcontainer}>
         <ul className={styles.navlist}>
           <li className={styles.navlink}>
