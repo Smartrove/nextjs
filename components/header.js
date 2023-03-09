@@ -6,7 +6,12 @@ const Header = () => {
   return (
     <div className={styles.navbarcontainer}>
       <Link href="/">
-        <Image src="/smartrove.jpg" width={100} height={100} />
+        <Image
+          className="px-2 mt-2"
+          src="/smartrove.jpg"
+          width={50}
+          height={50}
+        />
       </Link>
       <nav className={styles.navcontainer}>
         <ul className={styles.navlist}>
